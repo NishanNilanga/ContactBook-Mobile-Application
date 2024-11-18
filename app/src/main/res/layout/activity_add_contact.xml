@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/addContactHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/add_contact"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/FirstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addContactHeading"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the First Name:"
+        android:maxLines="1"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/blue_border"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/LastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addContactHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the Last Name:"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/NumberText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addContactHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the Phone Number"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addContactHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the Email Address"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/addContactHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the Any thing"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContentEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

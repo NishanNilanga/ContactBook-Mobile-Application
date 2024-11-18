@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+<!--FistNameLabel-->
+            <TextView
+                android:id="@+id/FirstNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="First Name :"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/FirstNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginLeft="95dp"
+                android:text="First Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+<!--LastNameLabel-->
+            <TextView
+                android:id="@+id/LNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FirstNameEditText"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Last Name :"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/LastNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FirstNameEditText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="95dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+<!--PhoneNumberLabel-->
+            <TextView
+                android:id="@+id/NumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LastNameEditText"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Phone Number :"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LastNameEditText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="130dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+<!--emailLabel-->
+            <TextView
+                android:id="@+id/emailLabelTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NumberText"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Email Address :"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NumberText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="125dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Email Address"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+<!--ContentLabel-->
+            <TextView
+                android:id="@+id/ContentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTxt"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Specials :"
+                android:textColor="@color/lightBlue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ContentEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTxt"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="80dp"
+                android:fontFamily="@font/poppins"
+                android:maxLines="3"
+                android:text="Specials"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/updateButton"
+                android:layout_width="32dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="34dp"
+                android:src="@drawable/edit"/>
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/delete2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
